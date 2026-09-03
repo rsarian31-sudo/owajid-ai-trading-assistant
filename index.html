@@ -12,555 +12,161 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Lightweight Charts -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 </head>
-<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
 <body>
 
-    <!-- =========================
-         APP
-    ========================== -->
-    <div class="app">
+<div class="app">
 
-        <!-- =========================
-             SIDEBAR
-        ========================== -->
-        <aside class="sidebar">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-            <div class="logo">
-                <div class="logo-icon">O</div>
+        <div class="logo">
+            <div class="logo-icon">O</div>
+
+            <div>
+                <h1>Owajid AI</h1>
+                <span>Trading Assistant</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <button class="nav-item active">
+                <span>⌂</span>
+                <span>Dashboard</span>
+            </button>
+
+            <button class="nav-item">
+                <span>◈</span>
+                <span>Market Analysis</span>
+            </button>
+
+            <button class="nav-item">
+                <span>◉</span>
+                <span>Signals</span>
+            </button>
+
+            <button class="nav-item">
+                <span>◷</span>
+                <span>Signal History</span>
+            </button>
+
+            <button class="nav-item">
+                <span>⚙</span>
+                <span>Settings</span>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
 
                 <div>
-                    <h1>Owajid AI</h1>
-                    <span>Trading Assistant</span>
+                    <strong>System Online</strong>
+                    <small>AI Engine Ready</small>
                 </div>
+
             </div>
 
-            <nav class="navigation">
+        </div>
 
-                <button class="nav-item active">
-                    <span>⌂</span>
-                    <span>Dashboard</span>
-                </button>
+    </aside>
 
-                <button class="nav-item">
-                    <span>◈</span>
-                    <span>Market Analysis</span>
-                </button>
 
-                <button class="nav-item">
-                    <span>◉</span>
-                    <span>Signals</span>
-                </button>
+    <!-- MAIN -->
+    <main class="main-content">
 
-                <button class="nav-item">
-                    <span>◷</span>
-                    <span>Signal History</span>
-                </button>
+        <!-- TOPBAR -->
+        <header class="topbar">
 
-                <button class="nav-item">
-                    <span>⚙</span>
-                    <span>Settings</span>
-                </button>
+            <div class="mobile-menu">
+                ☰
+            </div>
 
-            </nav>
+            <div class="page-title">
 
-            <div class="sidebar-bottom">
+                <h2>Trading Dashboard</h2>
 
-                <div class="system-status">
+                <p>
+                    AI-powered market analysis
+                </p>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <div class="market-status">
+
                     <span class="status-dot"></span>
 
+                    Market Online
+
+                </div>
+
+
+                <button class="icon-button">
+                    ◔
+                </button>
+
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        O
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Owajid</strong>
+
+                        <small>Trader</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+
+            <!-- MARKET SELECTOR -->
+            <div class="market-selector">
+
+                <div class="market-info">
+
+                    <div class="market-icon">
+                        X
+                    </div>
+
                     <div>
-                        <strong>System Online</strong>
-                        <small>AI Engine Ready</small>
-                    </div>
-                </div>
 
-            </div>
+                        <span class="label">
+                            MARKET
+                        </span>
 
-        </aside>
+                        <h3>
+                            XAUUSD
 
-
-        <!-- =========================
-             MAIN CONTENT
-        ========================== -->
-        <main class="main-content">
-
-            <!-- HEADER -->
-            <header class="topbar">
-
-                <div class="mobile-menu">
-                    ☰
-                </div>
-
-                <div class="page-title">
-                    <h2>Trading Dashboard</h2>
-                    <p>AI-powered market analysis</p>
-                </div>
-
-                <div class="topbar-actions">
-
-                    <div class="market-status">
-                        <span class="status-dot"></span>
-                        Market Online
-                    </div>
-
-                    <button class="icon-button">
-                        ◔
-                    </button>
-
-                    <div class="profile">
-                        <div class="profile-avatar">
-                            O
-                        </div>
-
-                        <div class="profile-info">
-                            <strong>Owajid</strong>
-                            <small>Trader</small>
-                        </div>
-                    </div>
-
-                </div>
-
-            </header>
-
-
-            <!-- CONTENT -->
-            <section class="content">
-
-
-                <!-- =========================
-                     MARKET SELECTOR
-                ========================== -->
-                <div class="market-selector">
-
-                    <div class="market-info">
-
-                        <div class="market-icon">
-                            X
-                        </div>
-
-                        <div>
-                            <span class="label">MARKET</span>
-
-                            <h3>
-                                XAUUSD
-                                <span class="live-badge">LIVE</span>
-                            </h3>
-
-                            <p>Gold / US Dollar</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeframe-group">
-
-                        <span class="label">TIMEFRAME</span>
-
-                        <div class="timeframes">
-                            <button>5M</button>
-                            <button class="selected">15M</button>
-                            <button>1H</button>
-                            <button>4H</button>
-                        </div>
-
-                    </div>
-
-
-                    <button class="refresh-button">
-                        ↻
-                        Refresh Analysis
-                    </button>
-
-                </div>
-
-
-                <!-- =========================
-                     SIGNAL OVERVIEW
-                ========================== -->
-                <div class="dashboard-grid">
-
-
-                    <!-- SIGNAL CARD -->
-                    <div class="card signal-card">
-
-                        <div class="card-header">
-                            <div>
-                                <span class="label">CURRENT SIGNAL</span>
-                                <h3>AI Trading Signal</h3>
-                            </div>
-
-                            <span class="signal-waiting">
-                                WAITING
+                            <span class="live-badge">
+                                LIVE
                             </span>
-                        </div>
-
-
-                        <div class="signal-main">
-
-                            <div class="signal-icon waiting">
-                                —
-                            </div>
-
-                            <div>
-                                <div class="signal-name">
-                                    NO TRADE
-                                </div>
-
-                                <p class="signal-description">
-                                    Waiting for market confirmation
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="confidence">
-
-                            <div class="confidence-header">
-                                <span>Confidence</span>
-                                <strong>0%</strong>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="signal-values">
-
-                            <div>
-                                <span>Entry</span>
-                                <strong>—</strong>
-                            </div>
-
-                            <div>
-                                <span>Stop Loss</span>
-                                <strong>—</strong>
-                            </div>
-
-                            <div>
-                                <span>Take Profit</span>
-                                <strong>—</strong>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- MARKET BIAS -->
-                    <div class="card bias-card">
-
-                        <div class="card-header">
-
-                            <div>
-                                <span class="label">MARKET BIAS</span>
-                                <h3>Multi-Timeframe</h3>
-                            </div>
-
-                            <span class="neutral-badge">
-                                ANALYZING
-                            </span>
-
-                        </div>
-
-
-                        <div class="bias-list">
-
-                            <div class="bias-row">
-                                <span>4H</span>
-                                <strong>—</strong>
-                                <span class="neutral">Waiting</span>
-                            </div>
-
-                            <div class="bias-row">
-                                <span>1H</span>
-                                <strong>—</strong>
-                                <span class="neutral">Waiting</span>
-                            </div>
-
-                            <div class="bias-row">
-                                <span>15M</span>
-                                <strong>—</strong>
-                                <span class="neutral">Waiting</span>
-                            </div>
-
-                            <div class="bias-row">
-                                <span>5M</span>
-                                <strong>—</strong>
-                                <span class="neutral">Waiting</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-                <!-- =========================
-                     CHART AREA
-                ========================== -->
-                <div class="card chart-card">
-
-                    <div class="card-header chart-header">
-
-                        <div>
-                            <span class="label">PRICE ACTION</span>
-
-                            <h3>
-                                XAUUSD
-                                <span class="price-placeholder">
-                                    Waiting for market data
-                                </span>
-                            </h3>
-                        </div>
-
-
-                        <div class="chart-tools">
-
-                            <button class="chart-time active">
-                                15M
-                            </button>
-
-                            <button class="chart-time">
-                                1H
-                            </button>
-
-                            <button class="chart-time">
-                                4H
-                            </button>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Temporary chart placeholder -->
-                    <div class="chart-placeholder">
-
-                        <div class="chart-grid"></div>
-
-                        <div class="chart-center">
-
-                            <div class="chart-icon">
-                                ◇
-                            </div>
-
-                            <h4>Market Chart</h4>
-
-                            <p>
-                                Real-time candlestick chart will appear here
-                            </p>
-
-                            <span>
-                                Connecting to market data...
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     ANALYSIS GRID
-                ========================== -->
-                <div class="analysis-grid">
-
-
-                    <!-- TECHNICAL ANALYSIS -->
-                    <div class="card technical-card">
-
-                        <div class="card-header">
-
-                            <div>
-                                <span class="label">
-                                    TECHNICAL ANALYSIS
-                                </span>
-
-                                <h3>
-                                    Market Structure
-                                </h3>
-                            </div>
-
-                            <span class="analysis-status">
-                                WAITING
-                            </span>
-
-                        </div>
-
-
-                        <div class="confirmation-list">
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    Market Structure
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    BOS / CHOCH
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    Liquidity Sweep
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    Fair Value Gap
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    Order Block
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-
-                            <div class="confirmation">
-
-                                <span class="confirmation-name">
-                                    Premium / Discount
-                                </span>
-
-                                <span class="confirmation-value neutral">
-                                    Waiting
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- AI ANALYSIS -->
-                    <div class="card ai-card">
-
-                        <div class="card-header">
-
-                            <div>
-                                <span class="label">
-                                    AI ANALYSIS
-                                </span>
-
-                                <h3>
-                                    AI Reasoning
-                                </h3>
-                            </div>
-
-                            <div class="ai-badge">
-                                AI
-                            </div>
-
-                        </div>
-
-
-                        <div class="ai-content">
-
-                            <div class="ai-icon">
-                                ✦
-                            </div>
-
-                            <h4>
-                                AI analysis is waiting
-                            </h4>
-
-                            <p>
-                                Once market data is connected, the AI
-                                engine will analyze structure, liquidity,
-                                FVG, Order Block and other confirmations.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     SIGNAL HISTORY
-                ========================== -->
-                <div class="card history-card">
-
-                    <div class="card-header">
-
-                        <div>
-                            <span class="label">
-                                RECENT ACTIVITY
-                            </span>
-
-                            <h3>
-                                Signal History
-                            </h3>
-                        </div>
-
-                        <button class="view-all">
-                            View All →
-                        </button>
-
-                    </div>
-
-
-                    <div class="empty-history">
-
-                        <div class="history-icon">
-                            ◷
-                        </div>
-
-                        <h4>
-                            No trading signals yet
-                        </h4>
+                        </h3>
 
                         <p>
-                            Your AI-generated signals will appear here.
+                            Gold / US Dollar
                         </p>
 
                     </div>
@@ -568,29 +174,564 @@
                 </div>
 
 
-            </section>
+                <div class="timeframe-group">
+
+                    <span class="label">
+                        TIMEFRAME
+                    </span>
+
+                    <div class="timeframes">
+
+                        <button>
+                            5M
+                        </button>
+
+                        <button class="selected">
+                            15M
+                        </button>
+
+                        <button>
+                            1H
+                        </button>
+
+                        <button>
+                            4H
+                        </button>
+
+                    </div>
+
+                </div>
 
 
-            <!-- FOOTER -->
-            <footer class="footer">
+                <button class="refresh-button">
 
-                <span>
-                    Owajid AI Trading Assistant
-                </span>
+                    ↻
 
-                <span>
-                    AI-assisted analysis • Not financial advice
-                </span>
+                    Refresh Analysis
 
-            </footer>
+                </button>
 
-        </main>
-
-    </div>
+            </div>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="app.js"></script>
+            <!-- SIGNAL OVERVIEW -->
+            <div class="dashboard-grid">
+
+
+                <!-- SIGNAL -->
+                <div class="card signal-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="label">
+                                CURRENT SIGNAL
+                            </span>
+
+                            <h3>
+                                AI Trading Signal
+                            </h3>
+
+                        </div>
+
+                        <span class="signal-waiting">
+                            WAITING
+                        </span>
+
+                    </div>
+
+
+                    <div class="signal-main">
+
+                        <div class="signal-icon waiting">
+                            —
+                        </div>
+
+                        <div>
+
+                            <div class="signal-name">
+                                NO TRADE
+                            </div>
+
+                            <p class="signal-description">
+                                Waiting for market confirmation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="confidence">
+
+                        <div class="confidence-header">
+
+                            <span>
+                                Confidence
+                            </span>
+
+                            <strong>
+                                0%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="signal-values">
+
+                        <div>
+
+                            <span>
+                                Entry
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Stop Loss
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Take Profit
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MARKET BIAS -->
+                <div class="card bias-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="label">
+                                MARKET BIAS
+                            </span>
+
+                            <h3>
+                                Multi-Timeframe
+                            </h3>
+
+                        </div>
+
+                        <span class="neutral-badge">
+                            ANALYZING
+                        </span>
+
+                    </div>
+
+
+                    <div class="bias-list">
+
+                        <div class="bias-row">
+
+                            <span>
+                                4H
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                            <span class="neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="bias-row">
+
+                            <span>
+                                1H
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                            <span class="neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="bias-row">
+
+                            <span>
+                                15M
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                            <span class="neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="bias-row">
+
+                            <span>
+                                5M
+                            </span>
+
+                            <strong>
+                                —
+                            </strong>
+
+                            <span class="neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REAL CHART -->
+            <div class="card chart-card">
+
+                <div class="card-header chart-header">
+
+                    <div>
+
+                        <span class="label">
+                            PRICE ACTION
+                        </span>
+
+                        <h3>
+                            XAUUSD
+
+                            <span class="price-placeholder">
+                                Live Chart
+                            </span>
+                        </h3>
+
+                    </div>
+
+
+                    <div class="chart-tools">
+
+                        <button class="chart-time">
+                            5M
+                        </button>
+
+                        <button class="chart-time active">
+                            15M
+                        </button>
+
+                        <button class="chart-time">
+                            1H
+                        </button>
+
+                        <button class="chart-time">
+                            4H
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CHART CONTAINER -->
+                <div class="chart-placeholder">
+
+                    <div
+                        id="trading-chart"
+                        style="width:100%;height:100%;"
+                    ></div>
+
+                    <div
+                        id="chart-loading"
+                        class="chart-loading"
+                    >
+
+                        <div class="chart-icon">
+                            ◇
+                        </div>
+
+                        <h4>
+                            Market Chart
+                        </h4>
+
+                        <p>
+                            Preparing real-time candlestick chart...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYSIS -->
+            <div class="analysis-grid">
+
+
+                <!-- TECHNICAL -->
+                <div class="card technical-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="label">
+                                TECHNICAL ANALYSIS
+                            </span>
+
+                            <h3>
+                                Market Structure
+                            </h3>
+
+                        </div>
+
+                        <span class="analysis-status">
+                            WAITING
+                        </span>
+
+                    </div>
+
+
+                    <div class="confirmation-list">
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                Market Structure
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                BOS / CHOCH
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                Liquidity Sweep
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                Fair Value Gap
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                Order Block
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+
+                        <div class="confirmation">
+
+                            <span class="confirmation-name">
+                                Premium / Discount
+                            </span>
+
+                            <span class="confirmation-value neutral">
+                                Waiting
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI -->
+                <div class="card ai-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="label">
+                                AI ANALYSIS
+                            </span>
+
+                            <h3>
+                                AI Reasoning
+                            </h3>
+
+                        </div>
+
+                        <div class="ai-badge">
+                            AI
+                        </div>
+
+                    </div>
+
+
+                    <div class="ai-content">
+
+                        <div class="ai-icon">
+                            ✦
+                        </div>
+
+                        <h4>
+                            AI analysis is waiting
+                        </h4>
+
+                        <p>
+                            Once market data is connected,
+                            the AI engine will analyze
+                            structure, liquidity, FVG,
+                            Order Block and other confirmations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HISTORY -->
+            <div class="card history-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="label">
+                            RECENT ACTIVITY
+                        </span>
+
+                        <h3>
+                            Signal History
+                        </h3>
+
+                    </div>
+
+                    <button class="view-all">
+                        View All →
+                    </button>
+
+                </div>
+
+
+                <div class="empty-history">
+
+                    <div class="history-icon">
+                        ◷
+                    </div>
+
+                    <h4>
+                        No trading signals yet
+                    </h4>
+
+                    <p>
+                        Your AI-generated signals will appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <span>
+                Owajid AI Trading Assistant
+            </span>
+
+            <span>
+                AI-assisted analysis • Not financial advice
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- APPLICATION JAVASCRIPT -->
+<script src="app.js"></script>
 
 </body>
 </html>
